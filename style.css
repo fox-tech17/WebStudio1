@@ -13,6 +13,20 @@
   --footer-cont-color: rgba(255, 255, 255, 0.6);
 }
 
+.container{
+  max-width: 1170px;
+  outline: solid var(--LGLetters-color);
+  margin: 0 auto;
+  
+}
+
+.header {
+  margin: 32px 0 32px 0;
+  display: flex; 
+  outline: solid var(--LGLetters-color);
+
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -26,6 +40,7 @@ body {
   line-height: normal;
   letter-spacing: 0.78px;
   text-decoration: none;
+  margin: 25px 0 24px 0;
 }
 
 .web {
@@ -35,10 +50,14 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+  display: flexbox;
 }
 
 .header-pages {
   list-style: none;
+  display: flex;
+  column-gap: 50px;
+  margin: 32px 0 32px 0;
 }
 
 .pages {
@@ -57,6 +76,10 @@ body {
 
 .header-cont {
   list-style: none;
+  display: flex;
+  margin-left: 294px;
+  column-gap: 50px;
+  
 }
 
 .contacts {
@@ -73,8 +96,12 @@ body {
   color: var(--HB-color);
 }
 
+.GB_section {
+  background-color: var(--GBG-color);
+}
+
 .opener-title {
-  /* color: var(--HWLetters-color) */
+  color: var(--HWLetters-color);
   text-align: center;
   font-size: 44px;
   font-style: normal;
@@ -82,11 +109,15 @@ body {
   line-height: 60px; /* 136.364% */
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  margin: 0 452px 280px 452px;
+  /* max-width: 696px;
+  max-height: 120px; */
+
 }
 
 .header-button {
-  /* color: var(--HWLetters-color); */
-  color: var(--BLetters-color);
+  color: var(--HWLetters-color);
+  background-color: var(--HB-color);
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -94,6 +125,13 @@ body {
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
   text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 32px;
+}
+
+.char_section {
+
 }
 
 .characteristics {
@@ -119,6 +157,11 @@ body {
   letter-spacing: 0.42px;
 }
 
+.ex_section {
+  margin: 0 auto;
+  
+}
+
 .title2 {
   color: var(--DGLetters-color);
   text-align: center;
@@ -131,6 +174,12 @@ body {
 
 .img-list {
   list-style: none;
+  columns: 3;
+  margin: 50px auto;
+}
+
+.team_section {
+
 }
 
 .title3 {
@@ -167,9 +216,12 @@ body {
   letter-spacing: 0.48px;
 }
 
+.info_footer {
+  background-color: var(--GBG-color);
+}
+
 .footer-logo {
-  /* color: var(--HWLetters-color); */
-  color: var(--logoH-color);
+  color: var(--HWLetters-color);
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -180,8 +232,7 @@ body {
 }
 
 .adress {
-  /* color: var(--HWLetters-color); */
-  color: var(--logoH-color);
+  color: var(--HWLetters-color);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -195,8 +246,7 @@ body {
 }
 
 .footer-contacts {
-  /* color: var(--footer-cont-color); */
-  color: var(--logoH-color);
+  color: var(--footer-cont-color);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
