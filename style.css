@@ -21,10 +21,13 @@
 }
 
 .header {
-  margin: 32px 0 32px 0;
+  margin: 0 auto;
   display: flex; 
   outline: solid var(--LGLetters-color);
+}
 
+.top_bar {
+  margin: 32px 0 32px 0;
 }
 
 body {
@@ -57,7 +60,7 @@ body {
   list-style: none;
   display: flex;
   column-gap: 50px;
-  margin: 32px 0 32px 0;
+  
 }
 
 .pages {
@@ -90,6 +93,7 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
   text-decoration: none;
+  margin: 32px 0 32px 0; /* doesnt do anything */
 }
 
 .email {
@@ -98,6 +102,7 @@ body {
 
 .GB_section {
   background-color: var(--GBG-color);
+  display: flex;
 }
 
 .opener-title {
@@ -112,8 +117,18 @@ body {
   margin: 0 452px 280px 452px;
   /* max-width: 696px;
   max-height: 120px; */
+  display: flex;
 
 }
+
+
+.top_G_txt {
+  align-items: center;
+  align-self: center;
+  display: flex;
+ /* no clue why it is to the left everything is center alligned */
+}
+
 
 .header-button {
   color: var(--HWLetters-color);
@@ -128,6 +143,7 @@ body {
   margin: 0 auto;
   display: block;
   padding: 10px 32px;
+  
 }
 
 .chars {
@@ -143,7 +159,7 @@ body {
   max-width: 270px;
   max-height: 74px;
 }
-
+/* even with two different classes the words still move to the other side*/
 .characteristics {
   list-style: none;
   columns: 4;
@@ -177,7 +193,7 @@ body {
 .ex_img {
   margin: 0 auto;
 }
-
+/*need to be shifted to the left*/
 .title2 {
   color: var(--DGLetters-color);
   text-align: center;
@@ -197,6 +213,7 @@ body {
 .team {
   max-height: 648px;
 }
+/* max height is not being applied*/
 
 .team_section {
   max-width: 270px;
@@ -220,7 +237,7 @@ body {
 
 .member-name {
   color: var(--DGLetters-color);
-  /* text-align: center; */
+  text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -230,7 +247,7 @@ body {
 
 .member-position {
   color: var(--LGLetters-color);
-  /* text-align: center; */
+  text-align: center; /*works for the name but not position*/
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -251,6 +268,7 @@ body {
   line-height: normal;
   letter-spacing: 0.78px;
   text-decoration: none;
+  margin: 60ps 1240px 20px 0;
 }
 
 .adress {
@@ -265,6 +283,7 @@ body {
 
 .foot-cont-list {
   list-style: none;
+  
 }
 
 .footer-contacts {
@@ -275,4 +294,5 @@ body {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
   text-decoration: none;
+  /*needs to be moved to the left and spaced out properly*/
 }
