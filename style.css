@@ -44,6 +44,8 @@ body {
   letter-spacing: 0.78px;
   text-decoration: none;
   margin: 25px 0 24px 0;
+  display: block;
+  padding-top: 15px;
 }
 
 .web {
@@ -53,7 +55,7 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  display: flexbox;
+  
 }
 
 .header-pages {
@@ -102,7 +104,7 @@ body {
 
 .GB_section {
   background-color: var(--GBG-color);
-  display: flex;
+  /* display: flex; */
 }
 
 .opener-title {
@@ -118,17 +120,7 @@ body {
   /* max-width: 696px;
   max-height: 120px; */
   display: flex;
-
 }
-
-
-.top_G_txt {
-  align-items: center;
-  align-self: center;
-  display: flex;
- /* no clue why it is to the left everything is center alligned */
-}
-
 
 .header-button {
   color: var(--HWLetters-color);
@@ -142,7 +134,8 @@ body {
   text-decoration: none;
   margin: 0 auto;
   display: block;
-  padding: 10px 32px;
+  border: none;
+  /* padding: 10px 32px; */
   
 }
 
@@ -152,17 +145,20 @@ body {
 
 .char_section {
   max-width: 270px;
-  max-height: 98px;
+  /* height: 98px; */
 }
 
-.char_section2 {
+/* .char_section2 {
   max-width: 270px;
-  max-height: 74px;
-}
+  height: 74px;
+} */
+
 /* even with two different classes the words still move to the other side*/
 .characteristics {
   list-style: none;
-  columns: 4;
+  /* columns: 4; */
+  display: flex;
+  gap: 30px;
 }
 
 .char-title {
@@ -211,13 +207,12 @@ body {
 }
 
 .team {
-  max-height: 648px;
+  max-width: px;
 }
 /* max height is not being applied*/
 
 .team_section {
   max-width: 270px;
-  max-height: 368px;
 }
 
 .title3 {
@@ -232,7 +227,7 @@ body {
 
 .team-list {
   list-style: none;
-  columns: 4;
+  display: flex;
 }
 
 .member-name {
@@ -283,7 +278,6 @@ body {
 
 .foot-cont-list {
   list-style: none;
-  
 }
 
 .footer-contacts {
