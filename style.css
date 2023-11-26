@@ -130,12 +130,23 @@ body {
   padding: 10px 32px;
 }
 
-.char_section {
+.chars {
+  margin: 94px 0;
+}
 
+.char_section {
+  max-width: 270px;
+  max-height: 98px;
+}
+
+.char_section2 {
+  max-width: 270px;
+  max-height: 74px;
 }
 
 .characteristics {
   list-style: none;
+  columns: 4;
 }
 
 .char-title {
@@ -159,7 +170,12 @@ body {
 
 .ex_section {
   margin: 0 auto;
-  
+  max-height: 386px;
+  max-width: 1170px;
+}
+
+.ex_img {
+  margin: 0 auto;
 }
 
 .title2 {
@@ -178,8 +194,13 @@ body {
   margin: 50px auto;
 }
 
-.team_section {
+.team {
+  max-height: 648px;
+}
 
+.team_section {
+  max-width: 270px;
+  max-height: 368px;
 }
 
 .title3 {
@@ -194,6 +215,7 @@ body {
 
 .team-list {
   list-style: none;
+  columns: 4;
 }
 
 .member-name {
