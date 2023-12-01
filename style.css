@@ -61,7 +61,7 @@ body {
 .header-pages {
   list-style: none;
   display: flex;
-  column-gap: 50px;
+  gap: 50px;
   
 }
 
@@ -83,7 +83,7 @@ body {
   list-style: none;
   display: flex;
   margin-left: 294px;
-  column-gap: 50px;
+  gap: 50px;
   
 }
 
@@ -95,7 +95,7 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
   text-decoration: none;
-  margin: 32px 0 32px 0; /* doesnt do anything */
+  margin: 32px 0 32px 0; 
 }
 
 .email {
@@ -117,8 +117,7 @@ body {
   letter-spacing: 2.64px;
   text-transform: uppercase;
   margin: 0 452px 280px 452px;
-  /* max-width: 696px;
-  max-height: 120px; */
+  /* max-width: 696px; */
   display: flex;
 }
 
@@ -136,6 +135,8 @@ body {
   display: block;
   border: none;
   /* padding: 10px 32px; */
+  align-items: center;
+  align-self: center;
   
 }
 
@@ -145,18 +146,12 @@ body {
 
 .char_section {
   max-width: 270px;
-  /* height: 98px; */
 }
 
-/* .char_section2 {
-  max-width: 270px;
-  height: 74px;
-} */
 
-/* even with two different classes the words still move to the other side*/
+
 .characteristics {
   list-style: none;
-  /* columns: 4; */
   display: flex;
   gap: 30px;
 }
@@ -202,14 +197,15 @@ body {
 
 .img-list {
   list-style: none;
-  columns: 3;
-  margin: 50px auto;
+  display: flex;
+  margin: 0 auto;
+  gap: 30px;
 }
 
 .team {
   max-width: px;
 }
-/* max height is not being applied*/
+
 
 .team_section {
   max-width: 270px;
@@ -228,6 +224,7 @@ body {
 .team-list {
   list-style: none;
   display: flex;
+  gap: 30px;
 }
 
 .member-name {
@@ -288,5 +285,4 @@ body {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
   text-decoration: none;
-  /*needs to be moved to the left and spaced out properly*/
 }
