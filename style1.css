@@ -13,6 +13,23 @@
   --footer-cont-color: rgba(255, 255, 255, 0.6);
 }
 
+.container{
+  max-width: 1170px;
+  outline: solid var(--LGLetters-color);
+  margin: 0 auto;
+  
+}
+
+.header {
+  margin: 0 auto;
+  display: flex; 
+  outline: solid var(--LGLetters-color);
+}
+
+.top_bar {
+  margin: 32px 0 32px 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -26,6 +43,9 @@ body {
   line-height: normal;
   letter-spacing: 0.78px;
   text-decoration: none;
+  margin: 25px 0 24px 0;
+  display: block;
+  padding-top: 15px;
 }
 
 .web {
@@ -35,10 +55,13 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+  
 }
 
 .header-pages {
   list-style: none;
+  display: flex;
+  gap: 50px;
 }
 
 .pages {
@@ -57,6 +80,10 @@ body {
 
 .header-cont {
   list-style: none;
+  display: flex;
+  margin-left: 294px;
+  gap: 50px;
+  
 }
 
 .contacts {
@@ -67,10 +94,19 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
   text-decoration: none;
+  margin: 32px 0 32px 0; 
 }
 
 .email {
   color: var(--HB-color);
+}
+
+.classes {
+  width: 575px;
+  outline: solid var(--LGLetters-color);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .class-list {
@@ -114,9 +150,20 @@ body {
   letter-spacing: 0.48px;
 }
 
+.samples {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.info_footer {
+  background-color: var(--GBG-color);
+  margin: 5px 0; 
+  padding: 5px; 
+}
+
 .footer-logo {
-  /* color: var(--HWLetters-color); */
-  color: var(--logoH-color);
+  color: var(--HWLetters-color);
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -127,23 +174,24 @@ body {
 }
 
 .adress {
-  /* color: var(--HWLetters-color); */
-  color: var(--logoH-color);
+  color: var(--HWLetters-color);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
+  margin: 0; 
 }
 
 .foot-cont-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-contacts {
-  /* color: var(--footer-cont-color); */
-  color: var(--logoH-color);
+  color: var(--footer-cont-color);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

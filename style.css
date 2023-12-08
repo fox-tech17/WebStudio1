@@ -62,7 +62,6 @@ body {
   list-style: none;
   display: flex;
   gap: 50px;
-  
 }
 
 .pages {
@@ -108,7 +107,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /*not too sure how this works, is there a better way to do this? */
+  height: 100vh; 
 }
 
 .opener-title {
