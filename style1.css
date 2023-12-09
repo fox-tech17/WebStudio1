@@ -132,7 +132,7 @@ body {
 }
 
 .special {
-  width: 100px;
+  min-width: 100px;
 }
 
 .b-selected {
@@ -174,7 +174,6 @@ body {
 }
 
 .samples {
-  
   flex-direction: column;
 }
 
