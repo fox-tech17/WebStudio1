@@ -113,12 +113,13 @@ body {
 .class-list {
   list-style: none;
   display: flex;
-  gap: 52px;
+  gap: 45px;
   padding-left: 0;
+  align-items: center;
 }
 
 .classification {
-  /* color: var(--DGLetters-color); */
+  color: var(--DGLetters-color);
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -144,7 +145,6 @@ body {
   justify-content: center;
   border: none;
   border-radius: 3px;
-
 }
 
 .projects {
