@@ -294,3 +294,83 @@ body {
   letter-spacing: 0.42px;
   text-decoration: none;
 }
+
+/* portfolio CSS */
+
+.classes {
+  width: 595px;
+  height: 54px;
+  outline: solid var(--LGLetters-color);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.class-list {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  padding-left: 0;
+  align-items: center;
+}
+
+.classification {
+  color: var(--DGLetters-color);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.48px;
+  display: flex;
+  border: none;
+}
+
+.special {
+  min-width: 100px;
+}
+
+.b-selected {
+  color: var(--HWLetters-color);
+  background-color: var(--HB-color);
+  width: 73px;
+  height: 38px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+}
+
+.projects {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 30px;
+}
+
+.project-title {
+  color: var(--DGLetters-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 200% */
+  letter-spacing: 1.08px;
+}
+
+.project-classification {
+  color: var(--LGLetters-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.48px;
+}
+
+.samples {
+  flex-direction: column;
+}
+
+
