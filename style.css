@@ -366,7 +366,7 @@ body {
 /* portfolio CSS */
 
 .classes {
-  width: 595px;
+  width: 602px;
   height: 54px;
   outline: solid var(--LGLetters-color);
   margin: 0 auto;
@@ -393,6 +393,8 @@ body {
   letter-spacing: 0.48px;
   display: flex;
   border: none;
+  border-radius: 3px;
+  box-shadow: 3px 2px 1px 1px rgb(189, 187, 187);
 }
 
 .special {
