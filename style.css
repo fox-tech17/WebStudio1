@@ -99,12 +99,30 @@ body {
 }
 
 .GB_section {
-  background-color: var(--GBG-color);
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-image: url(/images/header-background-img.jpg);
+  /* image does not perfectly fit perfectly into the box */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.GB_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--GBG-color), rgba(0,0,0,0.4));
+  z-index: -1;
+  /* not too sure about this code but seems to be working */
 }
 
 .opener-title {
@@ -137,19 +155,6 @@ body {
   padding: 10px 32px;
   border-radius: 7px;
 }
-
-/* .characteristics::before {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 70px;
-  background-image: , url(images/clock.jpg),
-    url(images/diagram.jpg), url(images/astronaut.jpg);
-  position: absolute;
-  background-size: cover;
-  margin-bottom: 10px;
-
-} */
 
 .chars {
   margin: 94px 0;
@@ -297,6 +302,8 @@ body {
   max-width: 270px;
   margin: 10px 0;
   text-align: center;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .member-name {
@@ -444,5 +451,6 @@ body {
 }
 
 .samples:hover {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
