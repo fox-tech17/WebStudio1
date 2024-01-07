@@ -101,27 +101,18 @@ body {
 .back-img {
   width: 1600px;
   height: 600px;
-  background-image: url(/images/header-background-img.jpg);
-  /* image does not perfectly fit perfectly into the box */
-  background-size: contain;
-  background-position: 50% 0;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(75, 75, 75, 0.5),
+      rgba(75, 75, 75, 0.4)
+    ),
+    url(/images/header-background-img.jpg);
   background-repeat: no-repeat;
-  position: relative;
-  
-  /* take image out of the container and have it be more left */
-}
-
-.back-img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, var(--GBG-color), rgba(0, 0, 0, 0.4));
-  z-index: -1;
-  /* not too sure about this code but seems to be working */
-
+  background-position: center;
+  background-size: cover;
 }
 
 .GB_section {
@@ -131,7 +122,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 600px;
-  outline: 3px solid green;
+  outline: solid var(--LGLetters-color);
 }
 
 .opener-title {
@@ -166,7 +157,7 @@ body {
 }
 
 .chars {
-  margin: 94px 0;
+  margin: 94px 250;
 }
 
 .char_section {
@@ -337,7 +328,7 @@ body {
 
 .info_footer {
   background-color: var(--GBG-color);
-  margin: 5px 0;
+  margin: 5px 314px;
   padding: 5px;
 }
 
