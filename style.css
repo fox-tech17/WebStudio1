@@ -14,7 +14,7 @@
 }
 
 .container {
-  max-width: 1170px;
+  width: 1170px;
   outline: solid var(--LGLetters-color);
   margin: 0 auto;
 }
@@ -98,31 +98,40 @@ body {
   color: var(--HB-color);
 }
 
-.GB_section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+.back-img {
+  width: 1600px;
+  height: 600px;
   background-image: url(/images/header-background-img.jpg);
   /* image does not perfectly fit perfectly into the box */
   background-size: contain;
-  background-position: center;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   position: relative;
+  
+  /* take image out of the container and have it be more left */
 }
 
-.GB_section::before {
+.back-img::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, var(--GBG-color), rgba(0,0,0,0.4));
+  background: linear-gradient(to bottom, var(--GBG-color), rgba(0, 0, 0, 0.4));
   z-index: -1;
   /* not too sure about this code but seems to be working */
+
+}
+
+.GB_section {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  outline: 3px solid green;
 }
 
 .opener-title {
