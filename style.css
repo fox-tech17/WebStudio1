@@ -324,6 +324,32 @@ body {
   letter-spacing: 0.48px;
 }
 
+.clients {
+
+}
+
+.title4 {
+  color: var(--DGLetters-color);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
+.c-list{
+
+}
+
+.comp {
+
+}
+
+.comp-logo1{
+  
+}
+
 .bg-color {
   background-color: var(--GBG-color);
   padding-bottom: 0;
