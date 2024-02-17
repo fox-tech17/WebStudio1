@@ -20,7 +20,7 @@
 }
 
 .header {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: flex;
   outline: solid var(--LGLetters-color);
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .back-img {
-  width: 1600px;
+  width: 100%;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -122,7 +122,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 600px;
-  outline: solid var(--LGLetters-color);
 }
 
 .opener-title {
@@ -194,7 +193,7 @@ body {
   display: block;
   width: 70px;
   height: 70px;
-  background-image: url(/images/antenna.jpg);
+  background-image: url(/images/antenna.svg);
   background-size: cover;
   margin-bottom: 10px;
   background-position: center; /*not working  */
@@ -208,7 +207,7 @@ body {
   display: block;
   width: 70px;
   height: 70px;
-  background-image: url(images/clock.jpg);
+  background-image: url(images/clock.svg);
   background-size: cover;
   margin-bottom: 10px;
   background-position: center; /*not working  */
@@ -222,7 +221,7 @@ body {
   display: block;
   width: 70px;
   height: 70px;
-  background-image: url(images/diagram.jpg);
+  background-image: url(images/diagram.svg);
   background-size: cover;
   margin-bottom: 10px;
   background-position: center; /*not working  */
@@ -236,13 +235,12 @@ body {
   display: block;
   width: 70px;
   height: 70px;
-  background-image: url(images/astronaut.jpg);
+  background-image: url(images/astronaut.svg);
   background-size: cover;
   margin-bottom: 10px;
-  background-position: center; /*not working  */
+  background-position: center;
   margin-bottom: 10px;
   margin-left: 80px;
-  /* temporary fix  */
 }
 
 .ex_section {
@@ -328,19 +326,8 @@ body {
 
 .info_footer {
   background-color: var(--GBG-color);
-  margin: 5px 314px;
+  margin: 5px 0;
   padding: 5px;
-}
-
-.footer-logo {
-  color: var(--HWLetters-color);
-  font-family: Raleway;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-  text-decoration: none;
 }
 
 .adress {
