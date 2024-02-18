@@ -10,6 +10,7 @@
   --PageC-color: #1e1e1e;
   --logoH-color: #000;
   --HWLetters-color: #fff;
+  --grey-color: #afb1b8;
   --footer-cont-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -325,7 +326,6 @@ body {
 }
 
 .clients {
-
 }
 
 .title4 {
@@ -338,29 +338,41 @@ body {
   letter-spacing: 1.08px;
 }
 
-.c-list{
-
+.c-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding-left: 0;
 }
 
 .comp {
-
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--grey-color);
+  border-radius: 6px;
+  
 }
 
-.comp-logo1{
+.comp-logo1 {
   
+}
+
+.yaco {
+  width: 106px;
+  height: 60px;
+  margin: 16px 32px;
+  fill: var(--grey-color);
 }
 
 .bg-color {
   background-color: var(--GBG-color);
   padding-bottom: 0;
   margin-bottom: 0;
-  
 }
 
 .info_footer {
   margin: 5px 0;
   padding: 5px;
-  
 }
 
 .bot-logo {
