@@ -95,7 +95,27 @@ body {
   margin: 32px 0 32px 0;
 }
 
-.email {
+.icon-email {
+  width: 16px;
+  height: 12px;
+  fill: var(--LGLetters-color);
+}
+
+.icon-email:hover {
+  fill: var(--HB-color);
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: var(--LGLetters-color);
+}
+
+.icon-phone:hover {
+  fill: var(--HB-color);
+}
+
+.contacts:hover {
   color: var(--HB-color);
 }
 
@@ -350,11 +370,9 @@ body {
   height: 92px;
   border: 1px solid var(--grey-color);
   border-radius: 6px;
-  
 }
 
 .comp-logo1 {
-  
 }
 
 .yaco {
