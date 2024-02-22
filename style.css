@@ -92,31 +92,32 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
   text-decoration: none;
-  margin: 32px 0 32px 0;
+  /* margin: 32px 0 32px 0; */
+  vertical-align: middle;
+}
+
+.contacts:hover {
+  color: var(--HB-color);
 }
 
 .icon-email {
   width: 16px;
   height: 12px;
-  fill: var(--LGLetters-color);
-}
-
-.icon-email:hover {
-  fill: var(--HB-color);
+  fill: currentColor;
+  margin-right: 10px;
+  margin-top: 0;
+  padding-top: 0;
+  vertical-align: middle;
 }
 
 .icon-phone {
   width: 10px;
   height: 16px;
-  fill: var(--LGLetters-color);
-}
-
-.icon-phone:hover {
-  fill: var(--HB-color);
-}
-
-.contacts:hover {
-  color: var(--HB-color);
+  fill: currentColor;
+  margin-right: 10px;
+  margin-top: 0;
+  padding-top: 0;
+  vertical-align: middle;
 }
 
 .back-img {
