@@ -346,6 +346,29 @@ body {
   letter-spacing: 0.48px;
 }
 
+.team-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 16px 32px 30px 32px;
+}
+
+.t-instagram {
+  width: 20px;
+  height: 20px;
+  color: var(--grey-color);
+  margin: 12px;
+ 
+}
+
+.t-instagram:hover {
+  fill: var(--HWLetters-color);
+  background-color: var(--HB-color);
+  border-radius: 50%;
+  border: 5px solid var(--HB-color); 
+  /* add a div around the icon and try mack the background bubble there */
+}
+
 .clients {
 }
 
