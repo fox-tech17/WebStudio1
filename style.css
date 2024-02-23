@@ -12,6 +12,7 @@
   --HWLetters-color: #fff;
   --grey-color: #afb1b8;
   --footer-cont-color: rgba(255, 255, 255, 0.6);
+  --ft-socials-color: rgba(255, 255, 255, 0.1);
 }
 
 .container {
@@ -93,7 +94,8 @@ body {
   letter-spacing: 0.28px;
   text-decoration: none;
   /* margin: 32px 0 32px 0; */
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 
 .contacts:hover {
@@ -353,23 +355,45 @@ body {
   margin: 16px 32px 30px 32px;
 }
 
-.t-instagram {
+.t-instagram,
+.t-twitter,
+.t-facebook,
+.t-linkedin {
   width: 20px;
   height: 20px;
-  color: var(--grey-color);
+  fill: var(--grey-color);
   margin: 12px;
- 
 }
 
-.t-instagram:hover {
-  fill: var(--HWLetters-color);
+.bubble {
+  width: 44px;
+  height: 44px;
+}
+
+.bubble:hover {
   background-color: var(--HB-color);
   border-radius: 50%;
-  border: 5px solid var(--HB-color); 
-  /* add a div around the icon and try mack the background bubble there */
+  cursor: pointer;
+}
+
+.bubble:hover .t-instagram {
+  fill: var(--HWLetters-color);
+}
+
+.bubble:hover .t-twitter {
+  fill: var(--HWLetters-color);
+}
+
+.bubble:hover .t-facebook {
+  fill: var(--HWLetters-color);
+}
+
+.bubble:hover .t-linkedin {
+  fill: var(--HWLetters-color);
 }
 
 .clients {
+  margin: 0 auto;
 }
 
 .title4 {
@@ -392,20 +416,49 @@ body {
 .comp {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--grey-color);
+  border: 2px solid var(--grey-color);
   border-radius: 6px;
 }
 
-.comp-logo1 {
-}
-
-.yaco {
+.yaco,
+.taglinecomp,
+.orgcomp,
+.foster,
+.brand,
+.tagline {
   width: 106px;
   height: 60px;
   margin: 16px 32px;
   fill: var(--grey-color);
 }
 
+.comp:hover {
+  border-color: var(--HB-color);
+}
+
+.comp:hover .yaco {
+  fill: var(--HB-color);
+}
+
+.comp:hover .taglinecomp {
+  fill: var(--HB-color);
+}
+
+.comp:hover .orgcomp {
+  fill: var(--HB-color);
+}
+
+.comp:hover .foster {
+  fill: var(--HB-color);
+}
+
+.comp:hover .brand {
+  fill: var(--HB-color);
+}
+
+.comp:hover .tagline {
+  fill: var(--HB-color);
+}
 .bg-color {
   background-color: var(--GBG-color);
   padding-bottom: 0;
@@ -415,6 +468,9 @@ body {
 .info_footer {
   margin: 5px 0;
   padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
 }
 
 .bot-logo {
@@ -447,6 +503,47 @@ body {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
   text-decoration: none;
+}
+
+.ft-join {
+  color: var(--HWLetters-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.team-socials-ft {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.t-instagram2,
+.t-twitter2,
+.t-facebook2,
+.t-linkedin2 {
+  width: 20px;
+  height: 20px;
+  fill: var(--HWLetters-color);
+  margin: 12px;
+}
+
+.bubble-bg {
+  width: 44px;
+  height: 44px;
+  background-color: var(--ft-socials-color);
+  border-radius: 50%;
+}
+
+.bubble-bg:hover {
+  background-color: var(--HB-color);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* portfolio CSS */
