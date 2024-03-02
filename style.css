@@ -294,9 +294,10 @@ body {
   margin: 0 auto;
   gap: 25px;
   margin: 7px 0;
-  padding: 7px;
 
   position: relative;
+
+  padding-left: 0;
 }
 
 .example-img1 {
@@ -304,6 +305,8 @@ body {
   height: 294px;
   background-image: url(./images/typing.jpg);
   z-index: 1;
+
+  display: block;
 }
 
 .example-img2 {
@@ -330,6 +333,8 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  padding-bottom: 0;
 
   position: absolute;
   bottom: 0;
