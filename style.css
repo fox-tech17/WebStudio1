@@ -13,6 +13,7 @@
   --grey-color: #afb1b8;
   --footer-cont-color: rgba(255, 255, 255, 0.6);
   --ft-socials-color: rgba(255, 255, 255, 0.1);
+  --overlay-color: rgba(47, 48, 58, 0.8);
 }
 
 .container {
@@ -294,6 +295,55 @@ body {
   gap: 25px;
   margin: 7px 0;
   padding: 7px;
+
+  position: relative;
+}
+
+.example-img1 {
+  width: 370px;
+  height: 294px;
+  background-image: url(./images/typing.jpg);
+  z-index: 1;
+}
+
+.example-img2 {
+  width: 370px;
+  height: 294px;
+  background-image: url(./images/laptop-img.jpg);
+  z-index: 1;
+}
+
+.example-img3 {
+  width: 370px;
+  height: 294px;
+  background-image: url(./images/hexa-colors.jpg);
+  z-index: 1;
+}
+
+.black-bg {
+  width: 370px;
+  height: 70px;
+
+  background-color: var(--overlay-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 2;
+  z-index: 2;
+}
+
+.desc {
+  color: var(--WLetters-color);
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .team {
