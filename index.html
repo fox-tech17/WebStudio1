@@ -81,9 +81,54 @@
         <h1 class="top_section opener-title">
           Ефективні рішення для вашого бізнесу
         </h1>
-        <button type="top_section button" class="header-button">
+        <button type="button" class="header-button" data-modal-open>
           Замовити послугу
         </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <h4 class="pop-up-tittle">
+              Залиште свої дані, ми вам передзвонимо
+            </h4>
+            <form class="pop-up-form">
+              <h6 class="form-sub-ttl">Ім'я</h6>
+              <label class="form-box">
+                <div class="person-icon"></div>
+                <input
+                  class="your-name"
+                  type="text"
+                  required
+                  minlength="5"
+                  pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                />
+              </label>
+              <h6 class="form-sub-ttl">Телефон</h6>
+              <label class="form-box">
+                <div class="phone-icon"></div>
+                <input class="your-name" type="tel" required minlength="5" />
+              </label>
+              <h6 class="form-sub-ttl">Пошта</h6>
+              <label class="form-box">
+                <div class="envelope-icon"></div>
+                <input class="your-email" type="email" required minlength="5" />
+              </label>
+              <h6 class="form-sub-ttl">Коментар</h6>
+              <div class="form-box">
+                <textarea
+                  class="your-message"
+                  placeholder="Введіть текст"
+                  maxlength="500"
+                ></textarea>
+              </div>
+            </form>
+            <div class="bot-txt">
+              <p class="txr">
+                Погоджуюся з розсилкою та приймаю
+                <a class="txt-link">Умови договору</a>
+              </p>
+            </div>
+            <button class="btn" data-modal-close>Відправити</button>
+          </div>
+        </div>
       </div>
     </section>
     <div class="container">
@@ -347,7 +392,7 @@
               </li>
             </ul>
           </div>
-          <div class="right-ft">
+          <div class="middle-ft">
             <h5 class="ft-join">приєднуйтесь</h5>
             <div class="team-socials-ft">
               <a href="#" class="bubble-bg">
@@ -371,14 +416,24 @@
                 </svg>
               </a>
             </div>
-            <div class="ft-form">
-              <h5 class="form-ttl">Підпишіться на розсилку</h5>
-              <label>
-                <input type="email" name="email" id="">
-              </label>
-            </div>
           </div>
-        </footer>
+          <div class="right-ft">
+            <h5 class="form-ttl">Підпишіться на розсилку</h5>
+            <div class="email-btn">
+              <label class="footer-em">
+                <input
+                  class="footer-email"
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  minlength="5"
+                />
+              </label>
+              <button class="ft-sign-up"> <div class="sign-txt">Підписатися</div> 
+                <svg class="plane"><use href="./images/symbol-defs.svg#icon-paper-plane"></use></svg>
+              </button>
+            </div>
+          </footer>
       </div>
     </div>
     <script src="./js/modal.js"></script>
