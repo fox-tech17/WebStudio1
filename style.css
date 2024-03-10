@@ -14,6 +14,7 @@
   --footer-cont-color: rgba(255, 255, 255, 0.6);
   --ft-socials-color: rgba(255, 255, 255, 0.1);
   --overlay-color: rgba(47, 48, 58, 0.8);
+  --light-black-color: rgba(0, 0, 0, 0.1)
 }
 
 .container {
@@ -203,11 +204,52 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 400px;
-  min-height: 300px;
+  width: 528px;
+  height: 581px;
   padding: 15px;
   background-color: white;
   transform: translate(-50%, -50%);
+}
+
+.close-modal {
+  width: 30px;
+  height: 30px;
+
+  border: 2px solid var(--light-black-color);
+  border-radius: 50%;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  padding: 0;
+
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.close {
+  width: 18px;
+  height: 18px;
+  fill: var(--BLetters-color);
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 4px;
+}
+
+.pop-up-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--DGLetters-color);
+
+  text-align: center;
+  
 }
 
 .chars {

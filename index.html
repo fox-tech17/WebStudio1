@@ -86,12 +86,18 @@
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="close-modal" data-modal-close>x</button>
-            <h4 class="pop-up-tittle">
+            <button class="close-modal" data-modal-close>
+              <svg class="close">
+              <use href="images/symbol-defs.svg#icon-cross"></use>
+            </svg></button>
+            <h4 class="pop-up-title">
               Залиште свої дані, ми вам передзвонимо
             </h4>
             <form class="pop-up-form">
               <h6 class="form-sub-ttl">Ім'я</h6>
+              <div class="form-outline"><svg class="form-icon">
+                <use href="images/symbol-defs.svg#icon-person"></use>
+              </svg> 
               <label class="form-box">
                 <div class="person-icon"></div>
                 <input
@@ -102,16 +108,25 @@
                   pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
                 />
               </label>
+            </div>
               <h6 class="form-sub-ttl">Телефон</h6>
+              <div class="form-outline"><svg class="form-icon">
+                <use href="images/symbol-defs.svg#icon-person"></use>
+              </svg> 
               <label class="form-box">
                 <div class="phone-icon"></div>
                 <input class="your-name" type="tel" required minlength="5" />
               </label>
+            </div>
               <h6 class="form-sub-ttl">Пошта</h6>
+              <div class="form-outline"><svg class="form-icon">
+                <use href="images/symbol-defs.svg#icon-person"></use>
+              </svg> 
               <label class="form-box">
                 <div class="envelope-icon"></div>
                 <input class="your-email" type="email" required minlength="5" />
               </label>
+            </div>
               <h6 class="form-sub-ttl">Коментар</h6>
               <div class="form-box">
                 <textarea
@@ -122,10 +137,10 @@
               </div>
             </form>
             <div class="bot-txt">
-              <p class="txr">
-                Погоджуюся з розсилкою та приймаю
+              <input class="checkbox" type="checkbox"/>
+                <p class="txt">Погоджуюся з розсилкою та приймаю
                 <a class="txt-link">Умови договору</a>
-              </p>
+                </p>
             </div>
             <button class="btn">Відправити</button>
           </div>
