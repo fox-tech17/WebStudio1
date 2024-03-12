@@ -14,7 +14,8 @@
   --footer-cont-color: rgba(255, 255, 255, 0.6);
   --ft-socials-color: rgba(255, 255, 255, 0.1);
   --overlay-color: rgba(47, 48, 58, 0.8);
-  --light-black-color: rgba(0, 0, 0, 0.1)
+  --light-black-color: rgba(0, 0, 0, 0.1);
+  --form-g-color: rgba(33, 33, 33, 0.2);
 }
 
 .container {
@@ -179,6 +180,8 @@ body {
   border: none;
   padding: 10px 32px;
   border-radius: 7px;
+
+  cursor: pointer;
 }
 
 .backdrop {
@@ -229,7 +232,6 @@ body {
 
   justify-content: center;
   align-items: center;
-  
 }
 
 .close {
@@ -237,10 +239,22 @@ body {
   height: 18px;
   fill: var(--BLetters-color);
 
+  display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top: 4px;
+  margin-left: 4px;
+  margin-top: 1px;
+
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  border-color: var(--HB-color);
+}
+
+.close-modal:hover .close {
+  fill: var(--HB-color);
 }
 
 .pop-up-title {
@@ -249,7 +263,69 @@ body {
   color: var(--DGLetters-color);
 
   text-align: center;
-  
+}
+
+.pop-up-form {
+  margin-left: 40px;
+}
+
+.form-sub-ttl {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--LGLetters-color);
+
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.form-outline {
+  width: 448px;
+  height: 40px;
+
+  border: 2px solid var(--form-g-color);
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 0;
+}
+
+.form-icon {
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 12px;
+  padding: 0;
+}
+
+.form-outline:hover {
+  border-color: var(--HB-color);
+}
+
+.form-outline:hover .person {
+  fill: var(--HB-color);
+}
+
+.form-outline:hover .phone {
+  fill: var(--HB-color);
+}
+
+.form-outline:hover .envelope {
+  fill: var(--HB-color);
+}
+
+.form-inp {
+  width: 400px;
+  font-size: 14px;
+
+  outline: none;
+  border: none;
 }
 
 .chars {
@@ -706,7 +782,7 @@ body {
 
 .footer-email {
   background-color: var(--GBG-color);
-  
+
   border: none;
   outline: none;
 
@@ -734,10 +810,9 @@ body {
 
   display: flex;
   gap: 10px;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
-
 
 .plane {
   width: 24px;
@@ -745,9 +820,8 @@ body {
 
   fill: var(--WLetters-color);
 
-  align-items: center; 
-  justify-content: center; 
-  
+  align-items: center;
+  justify-content: center;
 }
 
 /* portfolio CSS */
