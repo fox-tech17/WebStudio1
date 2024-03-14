@@ -90,14 +90,13 @@ body {
 }
 
 .selected::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 4px;
 
   background-color: var(--HB-color);
   border-radius: 4px;
 
- 
   position: absolute;
   bottom: -28px;
   left: 0;
@@ -802,7 +801,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 70px;
-
 }
 
 .bot-logo {
@@ -970,6 +968,7 @@ body {
   gap: 45px;
   padding-left: 0;
   align-items: center;
+  justify-content: center;
 }
 
 .classification {
@@ -984,23 +983,26 @@ body {
   display: flex;
   border: none;
   border-radius: 3px;
-  box-shadow: 3px 2px 1px 1px rgb(189, 187, 187);
+  /* box-shadow: 3px 2px 1px 1px rgb(189, 187, 187); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 73px;
+  height: 38px;
 }
 
-.special {
-  min-width: 100px;
-}
-
-.b-selected {
+.classification:hover {
   color: var(--HWLetters-color);
   background-color: var(--HB-color);
-  width: 73px;
-  height: 38px;
   text-align: center;
   align-items: center;
   justify-content: center;
   border: none;
   border-radius: 3px;
+
+  cursor: pointer;
 }
 
 .projects {
@@ -1011,6 +1013,60 @@ body {
   gap: 30px;
 }
 
+.samples {
+  flex-direction: column;
+
+  width: 370px;
+  height: 404px;
+  position: relative;
+}
+
+.samples:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.sample-photo {
+  width: 370px;
+  height: 294px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.sample-desc {
+  width: 370px;
+  height: 294px;
+
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  line-height: 28px;
+  color: var(--WLetters-color);
+
+  background-color: var(--HB-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.inside-bx {
+  width: 322px;
+  height: 168px;
+}
+
+.samples:hover .sample-desc {
+  visibility: visible;
+}
+
 .project-title {
   color: var(--DGLetters-color);
   font-size: 18px;
@@ -1018,6 +1074,8 @@ body {
   font-weight: 700;
   line-height: 36px; /* 200% */
   letter-spacing: 1.08px;
+
+  margin: 20px 24px 4px 24px;
 }
 
 .project-classification {
@@ -1027,13 +1085,7 @@ body {
   font-weight: 400;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
-}
 
-.samples {
-  flex-direction: column;
-}
-
-.samples:hover {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  margin-left: 24px;
+  padding-bottom: 20px;
 }
