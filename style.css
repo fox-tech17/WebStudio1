@@ -120,6 +120,10 @@ body {
   /* margin: 32px 0 32px 0; */
   display: flex;
   align-items: center;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts:hover {
@@ -495,10 +499,9 @@ body {
   background-image: url(/images/antenna.svg);
   background-size: cover;
   margin-bottom: 10px;
-  background-position: center; /*not working  */
+  background-position: center;
   margin-bottom: 10px;
   margin-left: 80px;
-  /* temporary fix  */
 }
 
 .char_section:nth-child(2)::before {
@@ -509,10 +512,9 @@ body {
   background-image: url(images/clock.svg);
   background-size: cover;
   margin-bottom: 10px;
-  background-position: center; /*not working  */
+  background-position: center; 
   margin-bottom: 10px;
   margin-left: 80px;
-  /* temporary fix  */
 }
 
 .char_section:nth-child(3)::before {
@@ -523,10 +525,9 @@ body {
   background-image: url(images/diagram.svg);
   background-size: cover;
   margin-bottom: 10px;
-  background-position: center; /*not working  */
+  background-position: center;
   margin-bottom: 10px;
   margin-left: 80px;
-  /* temporary fix  */
 }
 
 .char_section:nth-child(4)::before {
@@ -697,28 +698,38 @@ body {
 .bubble {
   width: 44px;
   height: 44px;
+
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bubble:hover {
   background-color: var(--HB-color);
   border-radius: 50%;
   cursor: pointer;
+
+  transform: scale(1.05);
 }
 
 .bubble:hover .t-instagram {
   fill: var(--HWLetters-color);
+  transform: scale(1.05);
 }
 
 .bubble:hover .t-twitter {
   fill: var(--HWLetters-color);
+  transform: scale(1.05);
 }
 
 .bubble:hover .t-facebook {
   fill: var(--HWLetters-color);
+  transform: scale(1.05);
 }
 
 .bubble:hover .t-linkedin {
   fill: var(--HWLetters-color);
+  transform: scale(1.05);
 }
 
 .clients {
@@ -759,34 +770,45 @@ body {
   height: 60px;
   margin: 16px 32px;
   fill: var(--grey-color);
+
+  transition-property: border-color, fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comp:hover {
   border-color: var(--HB-color);
+  transform: scale(1.1);
 }
 
 .comp:hover .yaco {
   fill: var(--HB-color);
+  transform: scale(1.1);
 }
 
 .comp:hover .taglinecomp {
   fill: var(--HB-color);
+  transform: scale(1.1);
 }
 
 .comp:hover .orgcomp {
   fill: var(--HB-color);
+  transform: scale(1.1);
 }
 
 .comp:hover .foster {
   fill: var(--HB-color);
+  transform: scale(1.1);
 }
 
 .comp:hover .brand {
   fill: var(--HB-color);
+  transform: scale(1.1);
 }
 
 .comp:hover .tagline {
   fill: var(--HB-color);
+  transform: scale(1.1);
 }
 
 .bg-color {
@@ -868,18 +890,25 @@ body {
   height: 44px;
   background-color: var(--ft-socials-color);
   border-radius: 50%;
+
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bubble-bg:hover {
   background-color: var(--HB-color);
   border-radius: 50%;
   cursor: pointer;
+
+  transform: scale(1.05);
 }
 
 .ft-form {
   display: flex;
   flex-direction: column;
 }
+
 .form-ttl {
   font-weight: 700;
   font-size: 14px;
@@ -991,6 +1020,10 @@ body {
 
   min-width: 73px;
   height: 38px;
+
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .classification:hover {
@@ -1003,6 +1036,8 @@ body {
   border-radius: 3px;
 
   cursor: pointer;
+
+  transform: scale(1.15);
 }
 
 .projects {
@@ -1019,12 +1054,18 @@ body {
   width: 370px;
   height: 404px;
   position: relative;
+
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .samples:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+
+  transform: scale(1.03);
 }
 
 .sample-photo {
